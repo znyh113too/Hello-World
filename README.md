@@ -1,8 +1,6 @@
-标签（空格分隔）： 测试标签1，测试标签2
 
----
+## 引用和无序列表展示 ##
 
-###  这是小标题
 > 
 - 1>表示引用
     。。。。。。
@@ -12,8 +10,10 @@
 - 引用结束
 >
 
-`正常内容`
+----------
 
+
+## 代码展示 ##
 ``` java 
 public void getList(Long interfaceId, Integer pageBegin, Integer fetchNum, RiskVo risk) throws IOException{
         Object result;
@@ -26,17 +26,35 @@ public void getList(Long interfaceId, Integer pageBegin, Integer fetchNum, RiskV
         writeSuccessResponse(result);
     }
 ```
-_这是正文_
-
-aaa
-
-列表项
-[百度][1]
 
 
-> 段落引用
+----------
+
+
+## 展示一些快捷语法 ##
+
+
+ 1. _这是正文斜体_
+ 2. ***这是粗体***
+
+
+[这是百度的超链接][1]
+
+> 这是段落引用的格式
+
+    空四个这里展示代码块，不会被转译
+    例如：<html><h1>html</h1></html>
+
+<html><h1>html</h1></html>
 
 ![这是一个风景图片][2]
+
+> 
+- [ ] 支持本地图片
+- [ ] 支持导出到印象笔记
+- [x] 支持瞎搞
+- [x] 支持引用网络图片地址
+>
 
 
   [1]: http://www.baidu.com
